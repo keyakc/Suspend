@@ -26,8 +26,8 @@ banner.onmousemove=function(event) {
 		nodesOfBanners[0].setAttribute("style",strGener(degOffsetX,degOffsetY,0,0));
 		nodesOfBanners[1].setAttribute("style",strGener(degOffsetX,degOffsetY*2,degOffsetY,degOffsetX/(-1.5)));
 		nodesOfBanners[2].setAttribute("style",strGener(degOffsetX,degOffsetY*2,degOffsetY*(4),degOffsetX*(-3)));
-		nodesOfBanners[3].setAttribute("style",strGener(degOffsetX*2,degOffsetY,0,0));
-		nodesOfBanners[4].setAttribute("style",strGener(degOffsetX*3,degOffsetY,0,0));
+		nodesOfBanners[3].setAttribute("style",strGener(degOffsetX,degOffsetY,degOffsetY*2,degOffsetX*(-2)));
+		nodesOfBanners[4].setAttribute("style",strGener(degOffsetX,degOffsetY,degOffsetY*3,degOffsetX*(-3)));
 }
 function strGener(degOffsetX,degOffsetY,translateX,translateY){
 	var str="transform:rotateX("+degOffsetX+"deg) rotateY("+degOffsetY+"deg) translate("+translateX+"px,"+translateY+"px);";
