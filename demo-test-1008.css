@@ -1,57 +1,58 @@
-#banner {
+.mod_banner {
 	width:75%;
 	margin-left:50px;
 	margin-top:20px;
 	position:relative;
 	perspective:2000px;
 }
- #banner img:nth-child(1) {
+ .mod_banner img:nth-child(1) {
  	width:100%; 	
  	transform:translateZ(0);
  	transition-duration:0.5s;
- 	z-index: 2;
+ 	z-index: 1;
  	box-shadow:2px 2px 3px gray;
  }
- #banner img:nth-child(2) {
+ .mod_banner img:nth-child(2) {
  	position:absolute;
  	top:30%;
  	left:10%;
  	height:20px;
 	max-width:100%;
-	z-index: 1;
+	z-index: 2;
 	transform:translateZ(0);
  	transition-duration:0.2s;
  }
- #banner img:nth-child(3) {
+ .mod_banner img:nth-child(3) {
  	position:absolute;
  	top:70%;
  	left:70%;
  	height:70px; 	
-	z-index: 1;
+	z-index: 2;
 	max-width:100%;
 	transform:translateZ(0);
  	transition-duration:0.2s;
  }
- #banner p {
+ .mod_banner p {
  	display: inline-block;
  	position: absolute; 	
  	font-size: 30px;
  	font-color:rgba(7,99,176,0.7);
  	transition-duration:0.5s;
+ 	z-index: 2;
  } 
- #banner p:nth-last-child(1){
+ .mod_banner p:nth-last-child(1){
 	top:55%;	
 	font-size: 40px;
 	animation:leftMov1 1.5s ease both;
  }
- #banner p:nth-last-child(1):hover{
+ .mod_banner p:nth-last-child(1):hover{
 	
  }
 	@keyframes leftMov1{
 		from {left:90%;opacity: 0}
 		to {left:50%;opacity: 1}
 	}
- #banner p:nth-last-child(2){
+ .mod_banner p:nth-last-child(2){
 	top:10%;
 	animation:leftMov2 1.5s ease both;
  }
