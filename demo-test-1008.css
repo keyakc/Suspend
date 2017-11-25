@@ -6,7 +6,7 @@
 	perspective:2000px;
 }
  .mod_banner img:nth-child(1) {
- 	width:100%; 	
+ 	width:100%;
  	transform:translateZ(0);
  	transition-duration:0.5s;
  	z-index: 1;

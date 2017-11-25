@@ -22,6 +22,7 @@ $banner.mousemove(function(event) {
 	    degOffsetX=(height/2-newOffsetY)*20/height,
 	    degOffsetY=(newOffsetX-width/2)*20/width,
 		str="transform:rotateX("+degOffsetX+"deg) rotateY("+degOffsetY+"deg);";	
+		
 		$banner_children.eq(0).attr("style",strGener(degOffsetX,degOffsetY,0,0));
 		$banner_children.eq(1).attr("style",strGener(degOffsetX,degOffsetY*2,degOffsetY,degOffsetX/(-1.5)));
 		$banner_children.eq(2).attr("style",strGener(degOffsetX,degOffsetY*2,degOffsetY*(4),degOffsetX*(-3)));
